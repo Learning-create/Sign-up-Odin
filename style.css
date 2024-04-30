@@ -1,48 +1,111 @@
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('fonts/comfortaa-bold-webfont.woff2') format('woff2'),
+         url('fonts/comfortaa-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('fonts/comfortaa-light-webfont.woff2') format('woff2'),
+         url('fonts/comfortaa-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('fonts/comfortaa-regular-webfont.woff2') format('woff2'),
+         url('fonts/comfortaa-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'lemon_milkregular';
+    src: url('fonts/lemon_milk-webfont.woff2') format('woff2'),
+         url('fonts/lemon_milk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     margin: 0%;
     padding: 0%;
+    
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(201, 201, 201) ;
     height: 100vh;
     padding: 0%;
     margin: 0%;
     display: flex;
     flex-direction: column;
+    font-family: "comfortaaregular";
+    background-image: url(https://images.unsplash.com/photo-1616513842455-e05584b1145c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-div {
-    border: 1px dotted black;
+#photo-id {
+    position: absolute;
+    color: black;
+    left: 30rem;
+
+    & a{
+        color: black;
+    }
+}
+
+.title {
+    font-size: 5rem;
+    font-family: 'lemon_milkregular';
+}
+
+ul {
+    width: 100%;
 }
 
 li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.col {
-    border: 1px solid rebeccapurple;
-}
 form {
     display: flex;
     flex-direction: column;
+    width: 500px;
+
+}
+input {
+    width: 90%;
 }
 
 .inputs {
     display: flex;
+    width: 100%;
 }
 
 .card {
-    background-color: beige;
+    background-color: rgb(245, 245, 220);
     height: 100vh;
-    aspect-ratio: 0.75/1;
+    width: 40vw;
     align-self: end;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    & * {
+    > * {
         width: 80%;
     }
 }
@@ -58,7 +121,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.75rem;  
 }
 
 footer {
@@ -78,3 +141,4 @@ footer {
         color: white;
     }
 }
+
