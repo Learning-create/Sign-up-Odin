@@ -84,20 +84,43 @@ li {
 legend {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+
+    > p {
+        font-size: 1rem
+    }
 }
 
 input {
     width: 90%;
-    height: 1.5rem;
+    height: 2rem;
     margin-top: .5rem;
     margin-bottom: 1.5rem;
     border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.5s ease-out;
+
+}
+
+
+input:required {
+    border: 1px solid black;
+}
+
+input:optional {
+    border-color: azure;
 }
 
 input:invalid {
-    border: red 1px solid;
+    border-color: red;
 }
 
+input:placeholder-shown {
+    border-color: black;
+}
+
+input:focus {
+    box-shadow: 1px 1px 20px rgb(126, 195, 255);
+}
 
 footer {
     background: linear-gradient(0deg, rgba(183,70,252,1) 0%, rgba(183,70,252,0.26934523809523814) 100%);
@@ -121,6 +144,7 @@ footer {
     font-size: 6rem;
     font-family: 'lemon_milkregular';
     text-align: center;
+    font-weight: 400;
 }
 
 .inputs {

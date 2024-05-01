@@ -16,7 +16,7 @@
     
     <div class="card">
         
-        <div class="title">CatLap</div>
+        <h1 class="title">CatLap</h1>
 
         <div class="description">
             <p>Our mission is to deliver a cat onto every cold lap in the world. This world is full of catless laps and lapless cats.
@@ -26,24 +26,24 @@
 
             <form action="get">
 
-                <legend>Try Us</legend>
+                <legend>Try Us: <p>(required fields are marked with *)</p></legend>
 
                 <div class="inputs">
                     <ul class="col">
 
                         <li>
                             <label for="fname">First Name*:</label>
-                            <input type="text" name="fname" id="fname" required>
+                            <input type="text" name="fname" id="fname" placeholder=" " required>
                         </li>
 
                         <li>
                             <label for="mail">Email*:</label>
-                            <input type="email" name="mail" id="mail" required>
+                            <input type="email" name="mail" id="mail" placeholder=" " required>
                         </li> 
 
                         <li>
                             <label for="pwd">Pasword*:</label>
-                            <input type="password" name="" id="" required>
+                            <input type="password" name="" id="" placeholder=" " minlength="5" required>
                         </li>
 
                     </ul>
@@ -52,17 +52,17 @@
                     <ul class="col">
                         <li>
                             <label for="lname">Last Name*:</label>
-                            <input type="text" name="lname" id="lname" required>
+                            <input type="text" name="lname" id="lname" placeholder=" " required>
                         </li>
     
                         <li>
                             <label for="tel">Phone Number:</label>
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" >
                         </li>
 
                         <li>
                             <label for="cpwd">Confirm Password*:</label>
-                            <input type="password" name="cpwd" id="cpwd" required>
+                            <input type="password" name="cpwd" id="cpwd" placeholder=" " minlength="5" required>
                         </li>
 
                     </ul>
