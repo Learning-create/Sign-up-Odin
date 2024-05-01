@@ -41,7 +41,7 @@
 }
 
 body {
-    background-color: rgb(201, 201, 201) ;
+    background-color: rgb(245, 245, 220) ;
     height: 100vh;
     padding: 0%;
     margin: 0%;
@@ -67,7 +67,6 @@ form {
     display: flex;
     flex-direction: column;
     width: 500px;
-
 }
 
 ul {
@@ -82,9 +81,23 @@ li {
     justify-content: space-between;
 }
 
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 input {
     width: 90%;
+    height: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
 }
+
+input:invalid {
+    border: red 1px solid;
+}
+
 
 footer {
     background: linear-gradient(0deg, rgba(183,70,252,1) 0%, rgba(183,70,252,0.26934523809523814) 100%);
@@ -105,8 +118,9 @@ footer {
 }
 
 .title {
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'lemon_milkregular';
+    text-align: center;
 }
 
 .inputs {
@@ -115,7 +129,7 @@ footer {
 }
 
 .card {
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(206, 223, 253);
     height: 100vh;
     width: 40vw;
     align-self: end;
@@ -128,6 +142,19 @@ footer {
         width: 80%;
     }
 }
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description p {
+    width: 55ch;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .warning {
     background-color: rgb(85, 0, 0);
     color: white;
@@ -143,5 +170,23 @@ footer {
     font-size: 1.75rem;  
 }
 
+.login {
+    align-self: center;
+    width: fit-content;
+}
 
+#button {
+    width: 15rem;
+    align-self: center;
+    height: 3rem;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: 0px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px rgb(171, 214, 252);
+}
 
+#button:hover {
+    background-color: rgb(171, 214, 252);
+    box-shadow: 1px 1px 20px rgb(126, 195, 255);
+}
